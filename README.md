@@ -2,8 +2,10 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vemcogroup/nova-websockets.svg?style=flat-square)](https://packagist.org/packages/vemcogroup/nova-websockets)
 [![Total Downloads](https://img.shields.io/packagist/dt/vemcogroup/nova-websockets.svg?style=flat-square)](https://packagist.org/packages/vemcogroup/nova-websockets)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/palpalani/nova-websockets/run-tests?label=tests)](https://github.com/palpalani/nova-websockets/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/palpalani/nova-websockets/Check%20&%20fix%20styling?label=code%20style)](https://github.com/palpalani/nova-websockets/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 
-This tool gives the possibiliy to create apps for [Laravel Websockets](https://github.com/beyondcode/laravel-websockets) and see analytics and debug.
+This tool gives the possibility to create apps for [Laravel Websockets](https://github.com/beyondcode/laravel-websockets) and see analytics and debug.
 
 ![screenshot 2019-01-31 at 12 56 20](https://user-images.githubusercontent.com/283184/52053383-7bbfdf80-2559-11e9-875a-63158b755f90.png)
 
@@ -57,3 +59,29 @@ To use the Analytics/Debug menu item to analyse your websocket connections you h
 'path' => 'sockets',
 ``` 
 
+## Testing
+
+```bash
+composer test
+```
+
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Contributing
+
+Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
+
+## Security Vulnerabilities
+
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
+
+## Credits
+
+- [palPalani](https://github.com/palpalani)
+- [All Contributors](../../contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
