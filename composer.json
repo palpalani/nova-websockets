@@ -4,7 +4,9 @@
     "keywords": [
         "laravel",
         "nova",
-        "websockets"
+        "websockets",
+        "palpalani",
+        "nova-websockets"
     ],
     "homepage": "https://github.com/vemcogroup/nova-websockets",
     "license": "MIT",
@@ -14,17 +16,39 @@
             "email": "hbh@vemcogroup.com",
             "homepage": "https://www.vemcogroup.com",
             "role": "Developer"
+        },
+        {
+            "name": "palPalani",
+            "email": "palani.p@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.1.0",
+        "php": "^7.3|^8.0",
         "laravel/nova": "*",
         "beyondcode/laravel-websockets": "^1.0"
+    },
+    "require-dev": {
+        "brianium/paratest": "^6.2",
+        "nunomaduro/collision": "^5.3",
+        "orchestra/testbench": "^6.15",
+        "phpunit/phpunit": "^9.3",
+        "vimeo/psalm": "^4.4"
     },
     "autoload": {
         "psr-4": {
             "Vemcogroup\\Websockets\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vemcogroup\\Websockets\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "./vendor/bin/testbench package:test --parallel --no-coverage",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "extra": {
         "laravel": {
