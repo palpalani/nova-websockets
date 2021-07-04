@@ -3,8 +3,8 @@
 namespace Vemcogroup\Websockets;
 
 use BeyondCode\LaravelWebSockets\Apps\App;
-use Vemcogroup\Websockets\Models\App as DatabaseApp;
 use BeyondCode\LaravelWebSockets\Apps\AppProvider;
+use Vemcogroup\Websockets\Models\App as DatabaseApp;
 
 class SocketProvider implements AppProvider
 {
